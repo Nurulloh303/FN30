@@ -6,5 +6,6 @@ def menu():
     btn2 = KeyboardButton("Komediya kinolar")
     btn3 = KeyboardButton("Drama kinolar")
     btn4 = KeyboardButton("Triler kinolar")
-    markup.add(btn1, btn2, btn3, btn4)
+    btn5 = KeyboardButton("Dedektiv kinolar")
+    markup.add(btn1, btn2, btn3, btn4, btn5)
     return markup
