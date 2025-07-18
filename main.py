@@ -11,6 +11,12 @@ def send_welcome(message: Message):
     full_name = message.chat.first_name
     bot.send_message(chat_id, f"Assalomu alykum {full_name} hush kelibsiz")
 
+@bot.message_handler(commands=['help'])
+def send_help(message: Message):
+    chat_id = message.chat.id
+    bot.send_message(chat_id,  "Yordam soramang baribir yordam bermyman!\n"
+                               "O'zingiz ozgina boshingizni ishlatib oylang!!!")
+
 if __name__ == "__main__":
     print("Bot ishladi...")
     bot.infinity_polling()
